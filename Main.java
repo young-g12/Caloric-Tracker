@@ -8,12 +8,14 @@ public class Main {
 	ArrayList<Person> person = new ArrayList<>();	
 	Person p = new Person();
 
-	p.setWeight(180);
+	p.setWeight(159);
+	p.setHeight(70);
 	p.setAge(23);
 
 	System.out.println(p.getWeight() + " " + p.getAge());
 	System.out.println("Enter number of calories eaten(per day): " );
 	int cal = scanner.nextInt();
+	p.bmrConversion(cal, cal, cal);
 
 
 
